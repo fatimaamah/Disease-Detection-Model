@@ -92,7 +92,7 @@ function App() {
     formData.append('images', image2);
 
     try {
-      const response = await fetch('http://localhost:3001/api/detect', {
+      const response = await fetch('https://disease-detection-model-backend.onrender.com/api/detect', {
         method: 'POST',
         body: formData,
       });
